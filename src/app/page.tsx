@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
-import Hero from "../components/hero";
-import About from "../components/aboutsection";
-import Kegiatan from "../components/kegiatansection";
-import Testimoni from "../components/testimoni"
+import Navbar from "../components/ui/navbar";
+import Hero from "../components/sections/hero";
+import About from "../components/sections/aboutsection";
+import Kegiatan from "../components/sections/kegiatansection";
+import FAQ from "../components/sections/faq"
 import SectionHeader from "../components/ui/sectionheader";
-import NewsSection from "../components/news";
+import NewsSection from "../components/sections/news";
 import Footer from "@/components/ui/footer";
-import Support from "@/components/support";
+import Support from "@/components/sections/support";
 
 export default function Home() {
   return (
@@ -33,19 +33,19 @@ export default function Home() {
       />
       <Kegiatan />
       <SectionHeader
-      id="testimoni"
-      backgroundText="TESTIMONI"
-      title="Apa Kata Mereka?"
-      subtitle="Kami sangat menghargai setiap pengalaman dan cerita dari para penghuni. Berikut adalah beberapa testimoni dari mereka yang tinggal di rusunawa Kaligawe." 
-      />
-      <Testimoni />
-      <SectionHeader
       id="news"
-      backgroundText="NEWS AND FACTS"
+      backgroundText="NEWS"
       title="Kamu Harus Tahu!"
       subtitle="Berita terbaru dan fakta menarik seputar Rusunawa Kaligawe. Dapatkan informasi terkini tentang kegiatan, program, dan berita penting lainnya yang relevan dengan komunitas kami." 
       />
       <NewsSection />
+      <SectionHeader
+      id="faq"
+      backgroundText="FAQ"
+      title="Apa Saja Pertanyaan yang Sering Diajukan?"
+      subtitle="Temukan jawaban atas pertanyaan umum seputar Rusunawa Kaligawe. Kami menyediakan informasi lengkap mengenai fasilitas, pendaftaran, biaya sewa, dan lainnya untuk membantu Anda memahami lebih baik."
+      />
+      <FAQ />
       <Support/>
       <Footer />
       

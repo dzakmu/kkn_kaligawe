@@ -19,7 +19,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-gray-900 font-semibold mb-4 text-lg">Company</h4>
+                        <h4 className="text-gray-900 font-semibold mb-4 text-lg">Rusunnawa</h4>
                         <ul className="space-y-3 text-gray-600 text-sm">
                             <li><Link href="/#hero" className="hover:text-[#0D5EA6] transition-colors">Home</Link></li>
                             <li><Link href="/#about" className="hover:text-[#0D5EA6] transition-colors">About</Link></li>
@@ -57,11 +57,6 @@ export default function Footer() {
                     <div className="order-2 md:order-1 text-center md:text-left">
                         © {new Date().getFullYear()} Rumah Susun Kaligawe. All rights reserved
                     </div>
-                    <ul className="flex space-x-6 order-1 md:order-2">
-                        <li><Link href="#" className="hover:text-[#0D5EA6] transition-colors">Kebijakan Privasi</Link></li>
-                        <li><Link href="#" className="hover:text-[#0D5EA6] transition-colors">Syarat & Ketentuan</Link></li>
-                        <li><Link href="/#support" className="hover:text-[#0D5EA6] transition-colors">Dukungan</Link></li>
-                    </ul>
                 </div>
             </div>
         </footer>

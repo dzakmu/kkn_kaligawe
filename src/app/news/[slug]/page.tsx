@@ -1,14 +1,12 @@
 import { notFound } from 'next/navigation';
-import { getNewsData, getSortedNewsData } from '@/lib/news';
-import Navbar from '@/components/navbar';
+import { getNewsData} from '@/lib/news';
+import Navbar from '@/components/ui/navbar';
 import Footer from '@/components/ui/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export function generateStaticParams() {
-  const allNews = getSortedNewsData();
-  return allNews.map(({ slug }) => ({ slug }));
-}
+import BanjirArticle from '@/components/articles/BanjirArticle';
+import Banjir2Article from '@/components/articles/Banjir2Article';
 
 export default async function NewsDetailPage({
   params,
@@ -17,8 +15,26 @@ export default async function NewsDetailPage({
 }) {
   const { slug } = await params;
 
+  if (slug === 'menghadapi_banjir') {
+    return (
+      <>
+        <Navbar />
+        <BanjirArticle />
+        <Footer />
+      </>
+    );
+  } else if (slug === 'pencegahan_banjir') {
+    return (
+      <>
+        <Navbar />
+        <Banjir2Article />
+        <Footer />
+      </>
+    );
+  }
+
   const newsItem = await getNewsData(slug);
-  if (!newsItem) notFound();
+  if (!newsItem) return notFound();
 
   return (
     <>

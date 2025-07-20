@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card } from './ui/card';
+import { Card } from '../ui/card';
 import { getSortedNewsData } from '@/lib/news';
 
 export default async function NewsSection() {
@@ -41,7 +41,7 @@ export default async function NewsSection() {
               <h3 className="text-xl font-semibold text-gray-900 leading-tight hover:text-[#0D5EA6] transition-colors">
                 {item.title}
               </h3>
-              <p className="mt-2 text-gray-700 text-sm">{item.description}</p>
+              <p className="mt-2 text-gray-700 text-sm text-justify">{item.description}</p>
             </Link>
           </Card>
         ))}
