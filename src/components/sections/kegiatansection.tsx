@@ -10,7 +10,7 @@ const kegiatanItems = [
     category: 'Kegiatan Masyarakat',
     title: 'Kerja Bakti',
     description: 'Kegiatan gotong royong membersihkan lingkungan rusun, seperti menyapu halaman, membuang sampah, dan merapikan fasilitas umum bersama warga. Kerja Bakti ini dilakukan setiap bulan sekali untuk menjaga kebersihan dan kenyamanan lingkungan.',
-    imageUrl: '/images/denah.png',
+    imageUrl: '/images/kerja_bakti.jpg',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const kegiatanItems = [
     category: 'Kegiatan Masyarakat',
     title: 'Senam Bersama',
     description: 'Kegiatan senam dilaksanakan rutin setiap minggu sore dihalaman rusun. Kegiatan ini bertujuan untuk meningkatkan kesehatan dan kebugaran warga, serta mempererat tali silaturahmi antarwarga. Untuk senam itu sendiri dikenai biaya sebesar Rp 5000,- per orang untuk biaya konsumsi setiap minggunya',
-    imageUrl: '/images/senam.jpeg',
+    imageUrl: '/images/senam.jpg',
   },
   {
     id: 4,
@@ -45,24 +45,48 @@ const kegiatanItems = [
   {
     id: 6,
     category: 'UMKM',
-    title: 'Kerajinan Tangan Ibu Ani',
-    description: 'Berbagai produk kerajinan unik dan berkualitas tinggi.',
-    imageUrl: '/images/kerajinan-ani.jpg',
+    title: 'Toko Kelontong dan Sembako ',
+    description: 'Menyediakan berbagai kebutuhan sehari-hari seperti sembako, makanan ringan, dan minuman. Toko ini menjadi pilihan utama bagi warga rusunawa Kaligawe untuk memenuhi kebutuhan sehari-hari dengan harga terjangkau. Toko ini ada disetiap blok rusunawa.',
+    imageUrl: '/images/toko.png',
   },
   {
     id: 7,
     category: 'UMKM',
-    title: 'Aneka Kue Kering Bu Rina',
-    description: 'Menyediakan berbagai macam kue kering untuk acara spesial atau camilan sehari-hari.',
-    imageUrl: '/images/kue-kering.jpg',
+    title: 'Warung Makan Sederhana',
+    description: ' Menyediakan berbagai masakan rumahan yang lezat dan terjangkau. Cocok untuk sarapan, makan siang, atau makan malam. Juga terdapat gorengan dan minuman segar. Lokasinya terletak persis di depan rusunnawa Kaligawe Blok A.',
+    imageUrl: '/images/warung.jpg',
+    span: 'md:row-span-2', 
   },
   {
     id: 8,
     category: 'UMKM',
-    title: 'Jasa Laundry Express',
-    description: 'Solusi cepat dan bersih untuk kebutuhan cucian Anda.',
-    imageUrl: '/images/kkn.jpg',
+    title: 'Bandeng Presto Barokah "Dua Putri',
+    description: 'Menyediakan berbagai olahan bandeng presto yang lezat dan gurih. Tersedia bandeng presto yang cocok untuk berbagai hidangan. Lokasinya terletak di Rusunawa Kaligawe Blok G Lt 5 No 8, Kaligawe, Kota Semarang, Jawa Tengah 50164. Berikut adalah nomor kontak yang bisa dihubungi: 0882-2723-1513',
+    imageUrl: '/images/bandeng.png',
+    span: 'md:row-span-2', 
   },
+  {
+    id: 9,
+    category: 'UMKM',
+    title: 'Aneka Seblak',
+    description: 'Menyediakan berbagai macam seblak dengan cita rasa yang lezat dan pedas. Tersedia seblak ceker, seblak kerupuk, seblak mie, dan masih banyak lagi. Cocok untuk kamu yang suka makanan pedas dan gurih. Lokasinya terletak di depan rusunawa Kaligawe.',
+    imageUrl: '/images/seblak.png',
+    // span: 'md:row-span-2', 
+  },
+  {
+    id: 10,
+    category: 'UMKM',
+    title: 'Potong Rambut',
+    description: 'Menyediakan layanan potong rambut dengan harga terjangkau. Toko ini menjadi pilihan bagi warga rusunawa Kaligawe untuk memenuhi kebutuhan potong rambut dengan kualitas yang baik. Layanan ini terletak di samping warung makan sederhana di depan rusunawa Kaligawe Blok A.',
+    imageUrl: '/images/tukang_cukur.png',
+  },
+  {
+    id: 11,
+    category: 'Kegiatan Masyarakat',
+    title: 'Perayaan Agustusan',
+    description: 'Perayaan Agustusan adalah kegiatan yang diadakan setiap tahun untuk memperingati hari kemerdekaan Republik Indonesia. Kegiatan ini meliputi berbagai lomba, pentas seni, jalan santai, senam bersama, dsb. Kegiatan ini biasanya dilakukan per RW.',
+    imageUrl: '/images/agustusan1.png',
+  }
 ];
 
 export default function KegiatanSection() {

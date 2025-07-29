@@ -103,7 +103,7 @@ export default function BanjirInteractiveArticle() {
         <section className="max-w-7xl mx-auto px-4 py-10">
             <Card className="p-6 md:p-10 mt-15 shadow-xl rounded-2xl">
                 <div className="text-sm text-gray-500 mb-4">
-                    Ditulis oleh <span className="font-medium text-gray-700">Muhammad Dzaky</span> | 19 Juli 2025
+                    Ditulis oleh <span className="font-medium text-gray-700">Muhammad Dzaky</span> | 20 Juli 2025
                 </div>
 
                 <h1 className="text-3xl font-bold text-center mb-6 text-gray-900">
@@ -264,7 +264,7 @@ export default function BanjirInteractiveArticle() {
                     {answers.every(a => a) && (
                         <div className="mt-8 p-6 bg-white border-l-4 border-[#0D5EA6] rounded-xl text-center shadow-lg animate-fade-in">
                             <h4 className="font-bold text-[#0D5EA6] mb-2 text-2xl flex items-center justify-center gap-2">
-                                 Simulasi Selesai!
+                                Simulasi Selesai!
                                 <Trophy className="w-5 h-5 animate-bounce" />
                             </h4>
                             <div className="flex justify-center items-center gap-4 mb-2">
@@ -277,7 +277,7 @@ export default function BanjirInteractiveArticle() {
                             </div>
                             {correctStates.filter(Boolean).length === questions.length ? (
                                 <p className="text-green-700 font-semibold text-lg flex items-center justify-center gap-2">
-                                    Kamu sangat siap menghadapi banjir! <CheckCircle size={24} className="text-green-500" />  
+                                    Kamu sangat siap menghadapi banjir! <CheckCircle size={24} className="text-green-500" />
                                 </p>
                             ) : (
                                 <p className="text-gray-700 text-base flex items-center justify-center gap-2">
@@ -293,7 +293,7 @@ export default function BanjirInteractiveArticle() {
                                     setCorrectStates(Array(questions.length).fill(null));
                                 }}
                             >
-                                 <RotateCcw size={18} /> Ulangi Simulasi
+                                <RotateCcw size={18} /> Ulangi Simulasi
                             </Button>
                             <div className="mt-4 flex justify-center gap-2">
                                 <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow animate-fade-in">
@@ -316,20 +316,22 @@ export default function BanjirInteractiveArticle() {
                     </p>
                     <Button
                         className="bg-[#0D5EA6] hover:bg-[#0A4A87] text-white font-bold shadow-lg transition-all"
-                        onClick={() => window.open('https://wa.me/?text=Yuk%20belajar%20tanggap%20banjir%20bersama%20artikel%20ini!%20https://rusunnawa.com', '_blank')}
-                    >
+                        onClick={() => window.open(
+                            'https://wa.me/?text=Yuk%20belajar%20cegah%20banjir%20bersama%20artikel%20ini!%20https://rusunnawakaligawe.vercel.app/news/pencegahan_banjir',
+                            '_blank'
+                        )}>
                         <Send className="w-5 h-5" /> Bagikan Artikel Ini
-                    </Button>
-                    <div className="mt-4 flex justify-center gap-4">
-                        <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow">
-                            #AksiNyata
-                        </span>
-                        <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow">
-                            #CegahBanjir
-                        </span>
-                    </div>
+                </Button>
+                <div className="mt-4 flex justify-center gap-4">
+                    <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow">
+                        #AksiNyata
+                    </span>
+                    <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow">
+                        #CegahBanjir
+                    </span>
                 </div>
-            </Card>
-        </section>
+            </div>
+        </Card>
+        </section >
     );
 }

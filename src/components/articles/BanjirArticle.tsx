@@ -238,7 +238,10 @@ export default function BanjirArticle() {
 
           <Button
             className="bg-[#0D5EA6] hover:bg-[#0A4A87] text-white font-bold shadow-lg transition-all"
-            onClick={() => window.open('https://wa.me/?text=Yuk%20belajar%20tanggap%20banjir%20bersama%20artikel%20ini!%20https://rusunnawa.com', '_blank')}
+            onClick={() => window.open(
+              'https://wa.me/?text=Yuk%20belajar%20cara%20menghadapi%20banjir%20dari%20artikel%20ini!%20https://rusunnawakaligawe.vercel.app/news/menghadapi_banjir',
+              '_blank'
+            )}
           >
             <Send className="w-5 h-5" /> Bagikan Artikel Ini
           </Button>

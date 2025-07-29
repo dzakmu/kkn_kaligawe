@@ -26,8 +26,8 @@ export default function Footer() {
                             <li className="flex items-center space-x-2">
                                 <Link href="/#kegiatan" className="hover:text-[#0D5EA6] transition-colors">Kegiatan</Link>
                             </li>
-                            <li><Link href="/#testimoni" className="hover:text-[#0D5EA6] transition-colors">Testimoni</Link></li>
-                            <li><Link href="/#news" className="hover:text-[#0D5EA6] transition-colors">News & Facts</Link></li>
+                            <li><Link href="/#news" className="hover:text-[#0D5EA6] transition-colors">News</Link></li>
+                            <li><Link href="/#umkm" className="hover:text-[#0D5EA6] transition-colors">FAQ</Link></li>
                             <li><Link href="/#support" className="hover:text-[#0D5EA6] transition-colors">Support</Link></li>
                         </ul>
                     </div>

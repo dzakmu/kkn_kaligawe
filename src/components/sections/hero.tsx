@@ -14,11 +14,11 @@ export default function Hero() {
   ];
 
   const images = [
-    "/images/rusun.png",
+    "/images/image.png",
     "/images/rusun2.png",
     "/images/rusun3.png",
-    "/images/kkn.jpg",
-    "/images/senam.jpeg",
+    "/images/posyandu.jpg",
+    "/images/senam.jpg",
   ];
 
   useEffect(() => {
